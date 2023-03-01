@@ -11,6 +11,8 @@ public:
     ICapture();
     virtual  ~ICapture();
     virtual void Create(const char* settings_json);
+    virtual void Destroy();
+    virtual void Update(const char* settings_json);
     virtual void Start();
     virtual void Stop();
     virtual void SetCaptureEvent(IEventListen *event);
